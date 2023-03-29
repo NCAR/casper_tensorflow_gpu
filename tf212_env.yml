@@ -1,4 +1,4 @@
-name: tf212gpu2
+name: tf212gpu
 channels:
   - conda-forge
   - nvidia
@@ -11,5 +11,4 @@ dependencies:
   - pip:
     - nvidia-cudnn-cu11==8.6.0.163
     - tensorflow==2.12.*
-variables: 
   
