@@ -1,7 +1,8 @@
 #!/bin/sh
+module load conda
 
-conda env create -f tf_212.yml
-conda activate tf212gpu
+mamba env create -f tf212_env.yml
+mamba activate tf212gpu
 mkdir -p $CONDA_PREFIX/etc/conda/activate.d
 mkdir -p $CONDA_PREFIX/etc/conda/deactivate.d
 cp activate_env_vars.sh $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
