@@ -1,7 +1,7 @@
 #!/bin/sh
 module load conda
 
-mamba env create -f tf212_env.yml
+CONDA_OVERRIDE_CUDA="11.8" mamba env create -f tf212_env.yml
 mamba activate tf212gpu
 mkdir -p $CONDA_PREFIX/etc/conda/activate.d
 mkdir -p $CONDA_PREFIX/etc/conda/deactivate.d
