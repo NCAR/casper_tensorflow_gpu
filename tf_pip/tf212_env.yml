@@ -4,11 +4,11 @@ channels:
   - nvidia
 dependencies:
   - python=3.10
-  - numpy=1.23.*
-  - cudatoolkit=11.8.0
+  - libblas=*=*mkl
+  - numpy
+  - cudatoolkit=11.8.*
   - cuda-nvcc=11.8.*
   - pip
   - pip:
     - nvidia-cudnn-cu11==8.6.0.163
     - tensorflow==2.12.*
-  
