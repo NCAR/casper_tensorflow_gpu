@@ -1,7 +1,7 @@
 #!/bin/sh
 module load conda
 
-CONDA_OVERRIDE_CUDA="11.8" mamba env create -f tf213_env.yml
+CONDA_OVERRIDE_CUDA="11.8" mamba env create -f tf213_pip_env.yml
 
 conda activate tf213gpu
 
