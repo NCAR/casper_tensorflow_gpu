@@ -13,3 +13,11 @@ Third, the `XLA_FLAGS` environment variable needs to be set to include the path 
 4. Start a batch job on a gpu node. You can start a 30 minute testing job with `execcasper -l select=1:ncpus=1:mem=20GB:ngpus=1 --gpu_type=v100 -q gpudev -A $PROJECT_ID` 
 5. Activate the environment with `module load conda` and `conda activate tfXXXgpu`. 
 6. Run `python test_simple_nn.py` to test that the GPU is detected correctly and that a simple neural net will train on the GPU. 
+
+## `pip` vs `nopip`
+
+The `pip` installation method provided in this repository is that recommended by Google which provides TensorFlow. The `nopip` version is community supported and ditributed primarily through `conda-forge`.
+
+In general, pure installations using `conda` are easier to maintain compared to `pip` based installations. It is relatively easy to break dependency requirements when mixing `pip` and `conda` installs. Nonetheless, the `pip` version of TensorFlow does include utility of the `tensorrt` framework since the Python Package Index distributes the `pip` version with this functionality. Additionally, the `pip` version includes instruction sets for CPU operations up to AVX while the `conda` version provides only up to SSE3. 
+
+Please consider these differences when choosing to install a version of TensorFlow.
