@@ -19,3 +19,4 @@ dependencies:
     - nvidia-cudnn-cu11==8.6.0.163
     - tensorrt
     - tensorflow==2.13.*
+    - keras-tuner
