@@ -8,6 +8,8 @@ dependencies:
   - numpy
   - scipy
   - pandas
+  - hdf5=*=*openmpi*
+  - h5py=*=*openmpi*
   - cudatoolkit=11.8.*
   - cuda-nvcc=11.8.*
   - tensorflow=2.11.*=cuda*
