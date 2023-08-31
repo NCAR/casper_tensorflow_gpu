@@ -16,7 +16,7 @@ dependencies:
   - cuda-nvcc=11.8.*
   - pip
   - pip:
-    - nvidia-cudnn-cu11==8.6.0.163
+    - nvidia-cudnn-cu11==8.6.*
     - tensorrt
     - tensorflow==2.12.*
     - keras-tuner

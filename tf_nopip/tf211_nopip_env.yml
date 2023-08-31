@@ -10,9 +10,8 @@ dependencies:
   - pandas
   - hdf5=*=*openmpi*
   - h5py=*=*openmpi*
-  - cudatoolkit=11.8.*
-  - cuda-nvcc=11.8.*
+  - cudatoolkit=11.2.*
+  - cuda-nvcc=11.2.*
   - tensorflow=2.11.*=cuda*
-  - cudnn
-  - keras
+  - cudnn=8.1.*
   - keras-tuner
